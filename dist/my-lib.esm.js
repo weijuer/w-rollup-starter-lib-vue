@@ -1,0 +1,1 @@
+import{openBlock as e,createElementBlock as l,toDisplayString as o}from"vue";const a={class:"hello-world"},n={name:"hello-world"};var r=Object.assign(n,{props:{name:{type:String,default:"world"}},setup:n=>(r,t)=>(e(),l("div",a,"Hello "+o(n.name)+"!",1))});function t(e){e.component(r.name,r)}r.__file="src/HelloWorld.vue";var s={install:t};export{s as default,t as install};

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myLib</title>
+    <link rel="stylesheet" href="../dist/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <hello-world name="myLib"></hello-world>
+    </div>
+    <script src="./vue.global.js"></script>
+    <script src="../dist/my-lib.umd.js"></script>
+    <script type="module">
+        // umd
+        const { createApp } = Vue;
+        const app = createApp();
+        console.log('myLib', myLib)
+
+        app.use(myLib);
+        app.mount('#app');
+    </script>
+</body>
+
+</html>
